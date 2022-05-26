@@ -53,6 +53,10 @@
     color: white;
     text-decoration: none;
 }
+
+.enlaces {
+    margin-bottom: auto;
+}
 /* Fin barra de navegacion */
 
 .principal {
@@ -63,47 +67,22 @@
     font-size: 3rem;
     text-align: center;
     color: white;
+    font-weight: 500;
 }
-
-/* Contenedor grid*/
-
-.contenedor {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-}
-
-/* Fin contenedor grid */
 
 /* Primer section */
 
-.section {
-    justify-self: center;
-}
-.sectionArticleVideo {
-    width: 45vw;
-    height: 102%;
-    margin-left: 5rem;
-}
-/* Fin primer section */
-
-/* Segundo section */
-
-.carousel {
-    margin-left: 4rem;
-}
-.col-12-sm {
-    text-align: center;
-    color: white;
-    font-size: 1.2rem;
-    font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
-}
 .d-block {
     width: 70rem;
     height: 34.4rem;
 }
 
-/* Fin segundo section */
+.col-12 {
+    font-size: 1.1rem;
+    color: white;
+}
+
+/* Fin primer section */
 
 /* Footer */
 .redes {
@@ -146,6 +125,9 @@
     width: 2.3rem;
 }
 
+.youtube {
+    width: 2.3rem;
+}
 
 .derechos {
     background-color: black;
@@ -158,16 +140,10 @@
 
 /* Integrantes */
 
-.contenedor2 {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    justify-content: space-between;
-    gap: 10px;
-}
-
-.contenedor2 {
+/* Contenedor */
+.container-fluid {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 /* Imagenes integrantes */
@@ -178,22 +154,22 @@
 
 .cardImg2 {
     width: 100%;
-    height: 26.5rem;
+    height: 24.1rem;
 }
 
 .cardImg3 {
     width: 100%;
-    height: 22.8rem;
+    height: 24.1rem;
 }
 
 .cardImg4 {
     width: 100%;
-    height: 26.5rem;
+    height: 24.1rem;
 }
 
 .cardImg5 {
     width: 100%;
-    height: 26.5rem;
+    height: 24.1rem;
 }
 
 .card {
@@ -206,7 +182,7 @@
     font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
 }
 /* Fin imagenes de instegrantes */
-
+/* Fin integrantes */
 
 /* Discografia */
 
@@ -320,7 +296,6 @@
 
 
 /* Conciertos */
-/* Article Contenedor */
 
 .concierto1 {
     border: 3px solid black;
@@ -336,7 +311,6 @@
     border: 3px solid black;
 }
 
-/* Fin article contenedor */
 
 /* Imagen conciertos */
 
@@ -500,44 +474,30 @@
 /* Medias */
 
 /* Pagina principal - contenedor */
-
-@media screen and (max-width: 1024px){
-    .contenedor {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: 1fr;
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
-    }
-    
-}
-/* video */
-@media screen and (max-width: 1024px){
-    .sectionArticleVideo {
-        width: 70vw;
-        height: 102%;
-        margin-right: 4.1rem;
-        justify-self: center;
-    }
-}
-
-@media screen and (max-width: 768px){
-    .sectionArticleVideo {
-        width: 70vw;
-        height: 102%;
-        margin-left: 9.7rem;
-    }
+@media screen and (max-width: 425px){
     .titulo {
-        margin-left: 5rem;
+        font-size: 2.3rem;
     }
 }
-@media screen and (max-width: 1024px){
-    .row {
-        margin: center;
+@media screen and (max-width: 375px){
+    .titulo {
+        font-size: 2.1rem;
     }
 }
-/* Fin video */
+@media screen and (max-width: 320px){
+    .titulo {
+        font-size: 1.8rem;
+    }
+}
 
+@media screen and (max-width: 465px){
+    .header .logo{
+        display: none;
+    }
+    .header .enlace ul {
+        text-align: center;
+    }
+}
 /* Fin pagina principal - contenedor */
 
 /* Tercera pagina */
@@ -553,50 +513,42 @@
     }
 }
 
-/* Fin tercera pagina */
+/* Imagenes discos */
 
-/* Integrantes */
+@media screen and (max-width: 375px){
+    .imagen1, .imagen2, .imagen3, .imagen4, .imagen5, .imagen6, .imagen7 {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .imagen1 {
+        margin-left: 2.2rem;
+    }
+}
 
 @media screen and (max-width: 320px){
-    .header .logo img {
-        height: 6rem;
-        width: auto;
-        visibility: hidden;
+    .imagen1 {
+        margin-left: 0.5rem;
     }
 }
-
-/* Footer */
-@media screen and (max-width: 768px){
-    .derechos {
-        text-align: center;
-    }
-}
-/* Footer */
-
-@media screen and (max-width: 480px){
-    .sectionArticleVideo {
-        width: 100%;
-        margin: 0px;
-    }
-    .carruselArticleImagen1 {
-        width: 100%;
+/* fin imagenes discos */
+@media screen and (max-width: 425px){
+    .row {
         justify-content: center;
-        height: 93.5%;
-        margin-left: 10rem;
-        margin-top: 0.1%;
-        margin: 0px;
-    }
-    .descripcionBandaInfo {
-        border: 3px solid rgb(255, 255, 255);
-        font-size: 1.2rem;
-        color: white;
-        width: 100%;
-        margin-left: 10rem;
-        margin: 0px;
-    }
-    .titulo {
-        margin: 0px 10px;
-        font-size: 2.8rem;
     }
 }
 
+@media screen and (max-width: 375px){
+    .row {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .row {
+        justify-content: center;
+    }
+}
+
+/* Fin tercera pagina */
