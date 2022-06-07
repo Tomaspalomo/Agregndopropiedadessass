@@ -59,6 +59,28 @@
 }
 /* Fin barra de navegacion */
 
+/* Menu hamburguesa*/
+
+.container-fluid {
+    display: flex;
+    justify-content: end;
+    background-color: black;
+}
+
+.navbar-toggler {
+    background-color: rgb(0, 0, 0);
+}
+
+.navbar {
+    background-color: black;
+}
+
+.nav-dark {
+    background-color: black;
+}
+
+/* Fin segunda barra de navegacion */
+
 .principal {
     background-color: rgb(59, 59, 59);
 }
@@ -134,14 +156,15 @@
     color: white;
     text-align: center;
     font-size: 1.3rem;
-    height: 4.3rem;
+    height: 6.2rem;
+    margin-bottom: 0;
 }
 /* Fin footer */
 
 /* Integrantes */
 
 /* Contenedor */
-.container-fluid {
+.container-fluid-dos {
     display: flex;
     justify-content: space-around;
 }
@@ -206,49 +229,49 @@
 .tituloAlbum1 {
     color: white;
     margin: 0px 10px;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     text-align: center;
 }
 
 .tituloAlbum2 {
     color: white;
     margin: 0px 10px;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     text-align: center;
 }
 
 .tituloAlbum3 {
     color: white;
     margin: 0px 10px;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     text-align: center;
 }
 
 .tituloAlbum4 {
     color: white;
     margin: 0px 10px;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     text-align: center;
 }
 
 .tituloAlbum5 {
     color: white;
     margin: 0px 10px;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     text-align: center;
 }
 
 .tituloAlbum6 {
     color: white;
     margin: 0px 10px;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     text-align: center;
 }
 
 .tituloAlbum7 {
     color: white;
     margin: 0px 10px;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     text-align: center;
 }
 
@@ -289,6 +312,7 @@
 .imagen7 {
     width: 25rem;
     height: 20rem;
+    margin-bottom: 1rem;
 }
 
 /* Fin imagen de discos */
@@ -297,183 +321,172 @@
 
 /* Conciertos */
 
-.concierto1 {
-    border: 3px solid black;
-    margin: 10px 0px;
+.contenedor4 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    justify-content: space-around;
 }
 
-.concierto2 {
-    border: 3px solid black;
-    margin: 10px 0px;
+.contenedor4 {
+    display: flex;
+    flex-wrap: wrap;
 }
-
-.concierto3 {
-    border: 3px solid black;
-}
-
-
-/* Imagen conciertos */
-
 .imagenConcierto1 {
-    width: 15rem;
-    height: 10rem;
+    height: 26.5rem;
 }
 
 .imagenConcierto2 {
-    width: 15rem;
-    height: 10rem;
+    height: 26.5rem;
+    margin-right: 30px;
 }
 
 .imagenConcierto3 {
-    width: 15rem;
-    height: 10rem;
+    height: 26.5rem;
 }
 
-/* Fin imagen conciertos */
-
-/* Estadio informacion */
-
-.conciertoPrague {
+.concierto {
     color: white;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    text-align: center;
 }
 
-.conciertoLisboa {
+.conciertoCenter {
     color: white;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-right: 5rem;
 }
 
-.conciertoVoa {
+.ubicacion {
     color: white;
+    margin-top: 1rem;
+    text-align: center;
 }
 
-/* Estadio informacion */
-
-/* Ubicacion del concierto */
-.ubicacion1 {
+.ubicacionCenter {
     color: white;
+    margin-top: 1rem;
+    text-align: center;
+    margin-right: 4rem;
 }
 
-.ubicacion2 {
+.fecha {
     color: white;
+    margin-top: 1rem;
+    text-align: center;
 }
 
-.ubicacion3 {
+.fechaCenter {
     color: white;
+    margin-top: 1rem;
+    text-align: center;
+    margin-right: 4rem;
 }
 
-/* Fin ubicacion del concierto */
-
-/* Horario del concierto */
-.horario1 {
-    color: white;
+.compraUno {
+    margin: 20px 100px;
 }
 
-.horario2 {
-    color: white;
+.compraDos {
+    margin: 20px 100px;
 }
 
-.horario3 {
-    color: white;
+.compraTres {
+    margin: 20px 100px;
 }
 
-/* Fin horario concierto */
-
-/* Precios */
-
-.precio1 {
-    color: white;
+.boton {
+    margin-left: 3rem;
 }
 
-.precio2 {
-    color: white;
+.botonCenter{
+    margin-left: 1rem;
 }
 
-.precio3 {
-    color: white;
+.boton:hover {
+    background-color: rgb(155, 155, 155);
 }
 
-/* Fin precios */
-
-/* Botones de compra */
-.botonDeCompra1 {
-    color: white;
-    text-decoration: none;
-    border-radius: 40px;
-    -webkit-border-radius: 40px;
-    -moz-border-radius: 40px;
-    -ms-border-radius: 40px;
-    -o-border-radius: 40px;
-    border: 2px solid white;
-    padding: 0px 20px;
-}
-
-
-.botonDeCompra2 {
-    color: white;
-    text-decoration: none;
-    border-radius: 40px;
-    -webkit-border-radius: 40px;
-    -moz-border-radius: 40px;
-    -ms-border-radius: 40px;
-    -o-border-radius: 40px;
-    border: 2px solid white;
-    padding: 0px 20px;
-}
-
-.botonDeCompra3 {
-    color: white;
-    text-decoration: none;
-    border-radius: 40px;
-    -webkit-border-radius: 40px;
-    -moz-border-radius: 40px;
-    -ms-border-radius: 40px;
-    -o-border-radius: 40px;
-    border: 2px solid white;
-    padding: 0px 20px;
-}
-
-/* Fin botones de compra */
 
 /* Contactanos */
+.principalContactanos {
+    height: 80vh;
+    background-color: rgb(59, 59, 59);
+}
 
 .novedades {
     color: white;
+    text-align: center;
+    margin-top: 3rem;
 }
 
-.contorno {
-    color: white;
-    margin: 0px 50px;
+form {
+    display: grid;
 }
 
-.nombre {
-    margin: 10px 10px;
+fieldset {
+    text-align: center;
+    display: grid;
+    justify-items: center;
+    margin: 10px;
+    border: 2px solid rgb(255, 255, 255);
 }
 
-.apellido {
-    margin: 10px 10px;
+.textosFieldset {
+    color: rgb(255, 255, 255);
+    margin: auto;
+    display: grid;
+    justify-content: center;
+    margin-top: 3rem;
 }
 
-.email {
-    margin: 10px 10px;
+.tamaño {
+    font-size: 1.3rem;
+    margin: 10px;
 }
 
-.celular {
-    margin: 10px 10px;
+label {
+    display: block;
+}
+
+input {
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    border: none;
+    width: 20rem;
+    height: 2rem;
+    text-align: center;
 }
 
 .enviar {
-    margin: 10px 10px;
+    margin: 20px 10px;
 }
 
-.borrar {
-    margin: 10px 10px;
+input::placeholder {
+    padding-left: auto;
+}
+
+.botonEnviar:hover {
+    background-color: rgb(155, 155, 155);
 }
 
 /* Fin contactanos */
 
-
 /* Medias */
 
 /* Pagina principal - contenedor */
+
+@media screen and (max-width: 376px){
+    .derechos {
+        height: auto;
+    }
+}
 @media screen and (max-width: 425px){
     .titulo {
         font-size: 2.3rem;
@@ -490,7 +503,7 @@
     }
 }
 
-@media screen and (max-width: 465px){
+@media screen and (max-width: 575px){
     .header .logo{
         display: none;
     }
@@ -498,57 +511,122 @@
         text-align: center;
     }
 }
-/* Fin pagina principal - contenedor */
 
-/* Tercera pagina */
-
-@media screen and (max-width: 1024px){
-    .contenedor3 {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: 1fr;
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
-        justify-items: center;
+@media screen and (max-width: 1242px){
+    nav {
+        display: none;
     }
 }
 
-/* Imagenes discos */
+@media screen and (min-width: 1241px){
+    .container-fluid {
+        display: none;}
+}
 
-@media screen and (max-width: 375px){
-    .imagen1, .imagen2, .imagen3, .imagen4, .imagen5, .imagen6, .imagen7 {
-        width: 300px;
+@media screen and (max-width: 768px){
+    .header .enlaces a {
+        font-size: 1.3rem;;
     }
 }
 
-@media screen and (max-width: 375px){
+@media screen and (min-width: 320px){
+    input {
+        width: 18rem;
+    }
+}
+
+
+/* Imagenes discografia */
+@media screen and (max-width: 320px){
     .imagen1 {
-        margin-left: 2.2rem;
+        width: 18rem;
+        height: 16rem;
+        margin-left: 10px;
     }
 }
 
 @media screen and (max-width: 320px){
-    .imagen1 {
-        margin-left: 0.5rem;
+    .imagen2 {
+        width: 18rem;
+        height: 16rem;
     }
 }
-/* fin imagenes discos */
+
+@media screen and (max-width: 320px){
+    .imagen3 {
+        width: 18rem;
+        height: 18rem;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .imagen4 {
+        width: 18rem;
+        height: 18rem;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .imagen5 {
+        width: 18rem;
+        height: 18rem;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .imagen6 {
+        width: 18rem;
+        height: 18rem;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .imagen7 {
+        width: 18rem;
+        height: 18rem;
+    }
+}
+
+/* Concieto */
+@media screen and (max-width: 1232px){
+    .compraUno {
+        margin-left: 7rem;
+    }
+}
+
+@media screen and (max-width: 1173px){
+    .compraDos {
+        margin-left: 8rem;
+    }
+    .conciertoCenter, .ubicacionCenter, .fechaCenter {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 1173px){
+    .compraTres {
+        margin-left: 6rem;
+    }
+}
+
 @media screen and (max-width: 425px){
-    .row {
+    .contenedor4 {
+        display: grid;
+        justify-content: space-between;
+    }
+    .contenedor4 {
+        display: flex;
         justify-content: center;
     }
-}
-
-@media screen and (max-width: 375px){
-    .row {
-        justify-content: center;
+    .imagenConcierto1, .imagenConcierto2, .imagenConcierto3{
+        width: 90%;
+    }
+    .concierto, .conciertoCenter{
+        font-size: 10px;
+    }
+    
+    .boton, .botonCenter{
+        margin-left: auto;
+        width: 16rem;
     }
 }
-
-@media screen and (max-width: 320px){
-    .row {
-        justify-content: center;
-    }
-}
-
-/* Fin tercera pagina */
