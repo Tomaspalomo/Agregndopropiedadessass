@@ -1,0 +1,22 @@
+// Mixins
+
+@mixin derechos {
+    text-align: center;
+    font-size: 1.3rem;
+    height: 6.2rem;
+    margin-bottom: 0;
+}
+
+@mixin grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 6%;
+    grid-gap: 3rem;
+    justify-content: space-evenly;
+}
+
+@mixin flex {
+    display: flex;
+    flex-wrap: wrap;
+}

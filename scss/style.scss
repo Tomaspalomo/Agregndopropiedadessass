@@ -1,0 +1,433 @@
+// Imports
+@import "base/extend";
+@import "base/mixins";
+@import "base/variables";
+@import "base/medias";
+
+
+// Nesting
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
+}
+
+body {
+    line-height: 1;
+}
+
+/* Logo */
+
+.header {
+    background-color: $background-color;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 7.9rem;
+}
+
+.logo :hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.header .logo {
+    margin-right: auto;
+    margin-left: 1rem;
+}
+.header .logo img {
+    height: 6rem;
+    width: auto;
+}
+/* Fin logo */
+
+/* Barra de navegacion */
+.header {
+    height: 10rem;
+}
+
+.header .enlaces li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.header .enlaces a {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+.enlaces {
+    margin-bottom: auto;
+}
+/* Fin barra de navegacion */
+
+/* Menu hamburguesa*/
+
+.container-fluid {
+    display: flex;
+    justify-content: end;
+    background-color: $background-color;
+}
+
+.navbar-toggler {
+    background-color: $background-color;
+}
+
+.navbar {
+    background-color: $background-color
+}
+
+.nav-dark {
+    background-color: $background-color;
+}
+
+/* Fin segunda barra de navegacion */
+
+.principal {
+    background-color: rgb(59, 59, 59);
+}
+
+.titulo {
+    font-size: $font-size-h1;
+    text-align: center;
+    color: $color-principal;
+    font-weight: 500;
+}
+
+/* Primer section */
+
+.d-block {
+    width: 70rem;
+    height: 30.4rem;
+}
+
+.col-12 {
+    font-size: 1.1rem;
+    color: $color-principal;
+}
+
+/* Fin primer section */
+
+/* Footer */
+.redes {
+    background-color: $background-color;
+    color: $color-principal;
+    text-align: center;
+    margin: auto;
+}
+
+.redesSociales {
+    display: flex;
+    justify-content: center;
+    background-color: $background-color;
+}
+
+.redesSociales i{
+    font-size: 2rem;
+    padding: 10px 20px;
+    height: 9.2vh;
+}
+
+.redesSociales i :hover {
+    transform: rotate(360deg);
+    transition: 1.5s;
+    -webkit-transition: 1.5s;
+    -moz-transition: 1.5s;
+    -ms-transition: 1.5s;
+    -o-transition: 1.5s;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+
+.instagram {
+    width: 2.3rem;
+}
+
+.spotify {
+    width: 2.3rem;
+}
+
+.youtube {
+    width: 2.3rem;
+}
+
+.derechos {
+    background-color: $background-color;
+    color: $color-principal;
+    @include derechos
+}
+/* Fin footer */
+
+/* Integrantes */
+
+/* Contenedor */
+.container-fluid-dos {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Imagenes integrantes */
+.cardimg1 {
+    width: 100%;
+    height: 22.4rem;
+}
+
+.cardImg2 {
+    width: 100%;
+    height: 24.1rem;
+}
+
+.cardImg3 {
+    width: 100%;
+    height: 24.1rem;
+}
+
+.cardImg4 {
+    width: 100%;
+    height: 24.1rem;
+}
+
+.cardImg5 {
+    width: 100%;
+    height: 24.1rem;
+}
+
+.card {
+    background-color: rgb(59, 59, 59);
+    border: 0px rgb(0, 0, 0) solid;
+    margin: 4rem;
+    padding: 10px;
+}
+
+.cardText {
+    color: white;
+    font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
+}
+/* Fin imagenes de instegrantes */
+/* Fin integrantes */
+
+/* Discografia */
+
+
+/* Titulos de discos */
+
+.contenedor3 {
+    @include grid
+}
+
+.contenedor3 {
+    @include flex
+}
+
+.album {
+    @extend  %album;
+}
+
+/* Fin titulo de discos */
+
+/* Imagenes de discos */
+
+.imagen {
+    @extend %imagen;
+}
+
+.imagen {
+    @extend %imagen;
+}
+
+.imagen {
+    @extend %imagen;
+}
+
+.imagen {
+    @extend %imagen;
+}
+
+.imagen {
+    @extend %imagen;
+}
+
+.imagen {
+    @extend %imagen;
+}
+
+.imagen7 {
+    width: 25rem;
+    height: 20rem;
+    margin-bottom: 1rem;
+}
+
+/* Fin imagen de discos */
+/* Fin discografia */
+
+
+/* Conciertos */
+
+.contenedor4 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    justify-content: center;
+}
+
+.contenedor4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.imagenConcierto1 {
+    height: 26.5rem;
+}
+
+.imagenConcierto2 {
+    height: 26.5rem;
+    margin-right: 30px;
+}
+
+.imagenConcierto3 {
+    height: 26.5rem;
+}
+
+.concierto {
+    color: white;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.conciertoCenter {
+    color: white;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-right: 5rem;
+}
+
+.ubicacion {
+    color: white;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.ubicacionCenter {
+    color: white;
+    margin-top: 1rem;
+    text-align: center;
+    margin-right: 4rem;
+}
+
+.fecha {
+    color: white;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.fechaCenter {
+    color: white;
+    margin-top: 1rem;
+    text-align: center;
+    margin-right: 4rem;
+}
+
+.compraUno {
+    margin: 20px 100px;
+}
+
+.compraDos {
+    margin: 20px 100px;
+}
+
+.compraTres {
+    margin: 20px 100px;
+}
+
+.boton {
+    margin-left: 3rem;
+}
+
+.botonCenter{
+    margin-left: 1rem;
+}
+
+.boton:hover {
+    background-color: rgb(155, 155, 155);
+}
+
+/* Contactanos */
+.principalContactanos {
+    height: 80vh;
+    background-color: rgb(59, 59, 59);
+}
+
+.novedades {
+    color: white;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+form {
+    display: grid;
+}
+
+fieldset {
+    text-align: center;
+    display: grid;
+    justify-items: center;
+    margin: 10px;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.textosFieldset {
+    color: rgb(255, 255, 255);
+    margin: auto;
+    display: grid;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.tamaño {
+    font-size: 1.3rem;
+    margin: 10px;
+}
+
+label {
+    display: block;
+}
+
+input {
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    border: none;
+    height: 2rem;
+    text-align: center;
+}
+
+.enviar {
+    margin: 20px 10px;
+}
+
+input::placeholder {
+    padding-left: auto;
+}
+
+.botonEnviar:hover {
+    background-color: rgb(155, 155, 155);
+}
+
+/* Fin contactanos */

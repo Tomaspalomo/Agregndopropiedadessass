@@ -1,0 +1,115 @@
+/* Medias */
+
+/* Pagina principal*/
+
+@media screen and (max-width: 376px){
+    .derechos {
+        height: auto;
+    }
+}
+@media screen and (max-width: 425px){
+    .titulo {
+        font-size: 2.3rem;
+    }
+}
+@media screen and (max-width: 375px){
+    .titulo {
+        font-size: 2.1rem;
+    }
+}
+@media screen and (max-width: 320px){
+    .titulo {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 575px){
+    .header .logo{
+        display: none;
+    }
+    .header .enlace ul {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1242px){
+    nav{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .header .enlaces .li {
+        font-size: 1.3rem;
+    }
+}
+
+// Fin pagina principal
+
+// Menu hamburgues no desaparece
+
+@media screen and (max-width: 1243px){
+    .container-fluid {
+        display: none;
+    }
+}
+
+// Fin menu hamburguesa
+
+
+/* Concierto */
+
+@media screen and (max-width: 1173px){
+    .compraTres {
+        margin-left: 6rem;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .contenedor4 {
+        display: grid;
+        justify-content: space-between;
+    }
+    .contenedor4 {
+        display: flex;
+        justify-content: center;
+    }
+    .imagenConcierto1, .imagenConcierto2, .imagenConcierto3{
+        width: 90%;
+    }
+    .concierto, .conciertoCenter{
+        font-size: 10px;
+    }
+    
+    .boton, .botonCenter{
+        margin-left: auto;
+        width: 16rem;
+    }
+}
+
+@media screen and (max-width: 1232px){
+    .compraUno {
+        margin-left: 7rem;
+    }
+}
+
+@media screen and (max-width: 1173px){
+    .compraDos {
+        margin-left: 8rem;
+    }
+    .conciertoCenter, .ubicacionCenter, .fechaCenter {
+        margin-right: 0;
+    }
+}
+
+
+// Formulario
+
+@media screen and (min-width: 320px){
+    input {
+        width: 18rem;
+    }
+}
+
+// Fin formulario
